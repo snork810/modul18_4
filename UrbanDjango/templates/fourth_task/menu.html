@@ -7,23 +7,25 @@
    <link rel = "stylesheet" type="text/css" href="{%static 'style.css'%}">
 </head>
 <body>
-    {%block pagename%}
-        <h1>Заголовок Страницы</h1>
-    {%endblock%}
+    <pagename>
+        {%block pagename%}
+            <h1>Заголовок Страницы</h1>
+        {%endblock%}
+    </pagename>
 
-
-    {%block menu%}
+    <menu>
+        {%block menu%}
     
-        <a href="/platform"><b>Главная</b></a>
-        <p></p>
-        <a href="/platform/store/"><b>Магазин</b></a>
-        <p></p>
-        <a href="/platform/cart"><b>Корзина</b></a>    
-   {%endblock%}
-
-    {%block content%}
-    
-    {%endblock%}
-
+            <a href="/platform"><b>Главная</b></a>
+            <p></p>
+            <a href="/platform/store/"><b>Магазин</b></a>
+            <p></p>
+            <a href="/platform/cart"><b>Корзина</b></a>    
+       {%endblock%}
+   </menu>
+    <content>
+        {%block content%}
+        {%endblock%}
+    </content>
 </body>
 </html>
